@@ -417,9 +417,17 @@ export default function MurettoPage() {
                 height={46}
                 className="h-7 w-auto brightness-0 invert opacity-90"
               />
-              <p className="text-white/50 text-sm mt-4 max-w-xs">
-                Temozón Norte, Mérida, Yucatán. Un desarrollo de Desarrolladora Calume.
-              </p>
+              <p className="text-white/50 text-sm mt-4 max-w-xs">Temozón Norte, Mérida, Yucatán.</p>
+              <div className="mt-6">
+                <p className="text-white/40 text-xs uppercase tracking-wide mb-2">Un proyecto de:</p>
+                <Image
+                  src="/logo/calume-logo.png"
+                  alt="Calume Desarrollos"
+                  width={160}
+                  height={42}
+                  className="h-7 w-auto brightness-0 invert opacity-90"
+                />
+              </div>
             </div>
             <div>
               <p className="text-white/40 text-xs uppercase tracking-wide mb-3">
