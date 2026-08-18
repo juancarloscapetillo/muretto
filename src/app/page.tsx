@@ -17,7 +17,6 @@ import {
   Phone,
   Mail,
   MessageCircle,
-  Building2,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import ContactForm from "@/components/ContactForm";
@@ -50,18 +49,21 @@ const MODELOS = [
     recamaras: "2 recámaras",
     m2: "80 m²",
     descripcion: "Sala, comedor, cocina, área de lavado, baño de visitas, recámara secundaria y recámara principal con baño vestidor.",
+    planta: "/plantas/modelo-a1.jpg",
   },
   {
     nombre: "Modelo A2",
     recamaras: "2 recámaras",
     m2: "80 m²",
     descripcion: "Misma distribución funcional que el A1, con orientación e iluminación propias dentro del conjunto.",
+    planta: "/plantas/modelo-a2.jpg",
   },
   {
     nombre: "Modelo B/C",
     recamaras: "1 recámara",
     m2: "58–63 m²",
     descripcion: "Sala/comedor integrados, cocina, medio baño de visitas, recámara y baño completo. Ideal como primera vivienda o inversión.",
+    planta: "/plantas/modelo-bc.jpg",
   },
 ];
 
@@ -265,20 +267,24 @@ export default function MurettoPage() {
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             {MODELOS.map((m) => (
-              <div key={m.nombre} className="bg-white rounded-xl2 p-7 flex flex-col">
-                <Building2 className="text-muretto-camel" size={28} />
-                <h3 className="text-xl font-bold text-muretto-navy mt-4">{m.nombre}</h3>
-                <div className="flex items-center gap-4 mt-3 text-sm text-gray-500">
-                  <span className="flex items-center gap-1.5">
-                    <Bed size={16} /> {m.recamaras}
-                  </span>
-                  <span className="flex items-center gap-1.5">
-                    <Ruler size={16} /> {m.m2}
-                  </span>
+              <div key={m.nombre} className="bg-white rounded-xl2 overflow-hidden flex flex-col">
+                <div className="relative aspect-[6/5] bg-gray-50">
+                  <Image src={m.planta} alt={`Planta arquitectónica del ${m.nombre}`} fill className="object-contain p-2" />
                 </div>
-                <p className="text-sm text-gray-600 mt-4 leading-relaxed flex-1">{m.descripcion}</p>
-                <div className="flex items-center gap-1.5 text-sm text-gray-500 mt-5 pt-5 border-t border-gray-100">
-                  <Car size={16} /> Cajón de estacionamiento techado
+                <div className="p-7 flex flex-col flex-1">
+                  <h3 className="text-xl font-bold text-muretto-navy">{m.nombre}</h3>
+                  <div className="flex items-center gap-4 mt-3 text-sm text-gray-500">
+                    <span className="flex items-center gap-1.5">
+                      <Bed size={16} /> {m.recamaras}
+                    </span>
+                    <span className="flex items-center gap-1.5">
+                      <Ruler size={16} /> {m.m2}
+                    </span>
+                  </div>
+                  <p className="text-sm text-gray-600 mt-4 leading-relaxed flex-1">{m.descripcion}</p>
+                  <div className="flex items-center gap-1.5 text-sm text-gray-500 mt-5 pt-5 border-t border-gray-100">
+                    <Car size={16} /> Cajón de estacionamiento techado
+                  </div>
                 </div>
               </div>
             ))}
