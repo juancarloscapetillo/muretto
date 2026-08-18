@@ -89,7 +89,17 @@ const EQUIPAMIENTO = [
   "Parrilla eléctrica y tarja de acero inoxidable",
 ];
 
-const OTROS_PROYECTOS = ["Atrium", "Sieben", "Canova", "Magnolia", "Agua Nativa"];
+const OTROS_PROYECTOS = [
+  "Atrium",
+  "Sieben",
+  "Canova",
+  "Magnolia",
+  "Agua Nativa",
+  "Baura",
+  "Kopó",
+  "Moira",
+  "Aleria",
+];
 
 const GALERIA = [
   { src: "/renders/hero-entrada.jpg", alt: "Acceso principal de Muretto al atardecer" },
@@ -318,7 +328,7 @@ export default function MurettoPage() {
           <div className="rounded-xl2 overflow-hidden shadow-popover aspect-[4/3] lg:aspect-auto lg:h-full min-h-[360px]">
             <iframe
               title="Ubicación de Muretto en Temozón Norte, Mérida"
-              src="https://www.google.com/maps?q=Temoz%C3%B3n+Norte,+M%C3%A9rida,+Yucat%C3%A1n&output=embed"
+              src="https://www.google.com/maps?q=97302+Temoz%C3%B3n+Norte,+97302+M%C3%A9rida,+Yuc.&output=embed"
               className="w-full h-full border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
