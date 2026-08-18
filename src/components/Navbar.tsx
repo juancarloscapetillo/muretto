@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 const LINKS = [
-  { href: "#proyecto", label: "El proyecto" },
+  { href: "#proyecto", label: "Proyecto" },
   { href: "#amenidades", label: "Amenidades" },
   { href: "#galeria", label: "Galería" },
   { href: "#modelos", label: "Modelos" },
