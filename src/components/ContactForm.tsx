@@ -70,7 +70,7 @@ export default function ContactForm() {
           placeholder="Cuéntanos qué buscas..."
         />
       </div>
-      <button type="submit" className="btn-muretto w-full">
+      <button type="submit" className="btn w-full bg-[#25D366] text-white font-semibold hover:bg-[#1EBE5A]">
         <MessageCircle size={18} />
         Enviar por WhatsApp
       </button>
