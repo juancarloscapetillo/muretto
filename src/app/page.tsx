@@ -363,7 +363,7 @@ export default function MurettoPage() {
             </p>
             <div className="space-y-4">
               <a
-                href="https://wa.me/529999473074"
+                href="https://wa.me/529992332340"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-gray-700 hover:text-muretto-navy transition-colors"
@@ -371,25 +371,25 @@ export default function MurettoPage() {
                 <span className="flex items-center justify-center h-10 w-10 rounded-full bg-muretto-navy/5 text-muretto-navy">
                   <MessageCircle size={18} />
                 </span>
-                999 947 3074
+                999 233 2340
               </a>
               <a
-                href="mailto:calumemx@gmail.com"
+                href="mailto:ventas.calume@gmail.com"
                 className="flex items-center gap-3 text-gray-700 hover:text-muretto-navy transition-colors"
               >
                 <span className="flex items-center justify-center h-10 w-10 rounded-full bg-muretto-navy/5 text-muretto-navy">
                   <Mail size={18} />
                 </span>
-                calumemx@gmail.com
+                ventas.calume@gmail.com
               </a>
               <a
-                href="tel:+529999473074"
+                href="tel:+529992332340"
                 className="flex items-center gap-3 text-gray-700 hover:text-muretto-navy transition-colors"
               >
                 <span className="flex items-center justify-center h-10 w-10 rounded-full bg-muretto-navy/5 text-muretto-navy">
                   <Phone size={18} />
                 </span>
-                +52 999 947 3074
+                +52 999 233 2340
               </a>
             </div>
           </div>
